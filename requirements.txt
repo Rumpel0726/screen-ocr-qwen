@@ -1,0 +1,11 @@
+# Зависимости OCR-скрипта (Windows 10, Python 3.11+).
+#   py -m pip install -r requirements.txt
+#
+# tkinter не указан — он входит в стандартную поставку Python с python.org.
+# Загрузчик .env написан внутри скрипта, python-dotenv не нужен.
+
+pynput>=1.7.6      # глобальный хоткей
+mss>=9.0.1         # захват экрана по координатам виртуального десктопа
+Pillow>=10.0.0     # даунскейл и кодирование PNG
+requests>=2.31.0   # запросы к RouterAI
+pyperclip>=1.8.2   # буфер обмена
